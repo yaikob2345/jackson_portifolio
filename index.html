@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Yaikob Website</title>
+     <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>YA</span>IKOB <span>TE</span>SGERA</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+			 <li><a href="#carouselExampleControls" data-after="terminology">Terminology</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>YAIKOB TESGERA<span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Ser<span>vi</span>ces</h1>
+        <p>As a passionate computer science professional with a strong educational background and hands-on experience,
+		I offer a wide range of services aimed at solving problems, empowering communities, and driving innovation. My journey, which began in West Wollega, Oromia, has shaped my dedication to creating meaningful solutions for both individuals and organizations. With expertise gained from academic training, certifications, and real-world projects like network installations and software development, I am equipped to address diverse technological challenges. I combine technical proficiency with creativity to design and implement systems that make an impact. My approach prioritizes efficiency, reliability, and user satisfaction, ensuring that every solution meets the specific needs of my clients. By leveraging my skills in programming, networking, and design, I strive to bridge the gap between technology and real-world problems, 
+		making technology more accessible and beneficial for everyone. Below are the key services I provide:!</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Web Design</h2>
+          <p>I specialize in designing and developing user-friendly, responsive websites tailored to individual or organizational needs. From creating interactive web applications to building secure e-commerce platforms,
+		  I focus on delivering high-quality, scalable solutions.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Networking</h2>
+          <p>Leveraging my Cisco certification and hands-on experience from projects like the network installation at the Commercial Bank of Ethiopia, I provide services such as network setup, troubleshooting, and security enhancement.
+		  These solutions ensure reliable and secure connections for organizations.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Graphics Design</h2>
+          <p>Combining creativity and technical skills, I create visually appealing designs that enhance user experiences. This includes crafting engaging graphics, 
+		  user interfaces, and layouts for websites or applications that meet modern design standards.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Video Editing</h2>
+          <p>As a passionate computer science professional with a strong educational background and hands-on experience, 
+		  I offer a wide range of services aimed at solving problems.
+		  My journey, which began in West Wollega, Oromia, has shaped my dedication to creating meaningful:</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+  <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials</small>
+            <h3>Happy Clients Feedback</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                       "With a deep passion for technology, I am driven to solve complex problems and create meaningful solutions. I believe that every challenge presents an opportunity for innovation and growth. My approach is rooted in dedication, aiming not only to meet expectations but to exceed them by delivering high-quality, impactful work. Through continuous learning and applying my 
+					   skills, I strive to contribute positively to both the tech industry and the communities I serve."
+                      </p>
+                      <h4>yaikob</h4>
+                      <small class="fs-6 text-muted">Jinka of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                       "With a deep passion for technology, I am driven to solve complex problems and create meaningful solutions. I believe that every challenge presents an opportunity for innovation and growth. My approach is rooted in dedication, aiming not only to meet expectations but to exceed them by delivering high-quality, impactful work. Through continuous learning and applying 
+					   my skills, I strive to contribute positively to both the tech industry and the communities I serve."
+                      </p>
+                      <h4>yaikob Tesgera</h4>
+                      <small class="fs-6 text-muted">Jinka of Company</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        "With a deep passion for technology, I am driven to solve complex problems and create meaningful solutions. I believe that every challenge presents an opportunity for innovation and growth. My approach is rooted in dedication, aiming not only to meet expectations but to exceed them by delivering high-quality, impactful work. Through continuous learning and applying my skills,
+						I strive to contribute positively to both the tech industry and the communities I serve."
+                      </p>
+                      <h4>yaikob Tesgera</h4>
+                      <small class="fs-6 text-muted">Jinka of Company</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial ends here -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>Blood Bank Information Management System</h2>
+            <p> 
+As part of my final project, I developed a comprehensive Blood Bank 
+Information Management System. The system was designed to manage blood donations, track inventory, and ensure efficient data retrieval for healthcare providers. It integrates secure user authentication, real-time blood stock tracking, and automated notifications to alert staff when blood supplies are running low. This system aims to 
+streamline operations in blood banks, ensuring timely availability of blood for patients in need.!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/jinka.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Internship at the Commercial Bank of Ethiopia</h2>
+            <p> 
+During my internship at the Commercial Bank of Ethiopia - Mendi Branch, I was involved in the installation and configuration of the bank’s network systems. I worked with a team to ensure the bank’s IT infrastructure was reliable and secure, contributing to the optimization of their internal communication systems. I also assisted in troubleshooting 
+and resolving network issues, improving the overall operational efficiency of the bank’s services.!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>House Price Prediction Using Machine Learning</h2>
+            <p> 
+For this project, I applied machine learning techniques to predict house prices based on various factors such as location, size, and amenities. Using regression models like Linear Regression and decision trees, I built a predictive model that accurately estimates property values. The project involved data cleaning, feature engineering, and model evaluation to ensure the system’s 
+predictions were as accurate as possible, helping potential buyers and sellers make informed decisions.!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>Logo Design for Abbay Restuarant</h2>
+            <p>
+I created a professional logo design for Abay Restuarant, focusing on delivering a modern and memorable design that represents their brand values. The design process involved extensive research on the client’s industry, followed by brainstorming sessions and iterations to finalize a logo that is both visually appealing and versatile across different mediums.
+ The logo has been well received and is now an integral part of the client's branding and marketing materials.!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 5</h1> 
+            <h2>Beginner Coding with HTML, CSS, PHP, and Java</h2>
+            <p>As a beginner in programming, I worked on learning and creating basic web development projects using HTML, CSS, PHP, and Java. This involved building static websites, adding interactivity with JavaScript, and learning how to develop dynamic web applications with PHP. I also created simple Java programs to strengthen my understanding of object-oriented programming. This foundational work laid the groundwork for my more advanced projects in software and web development.
+
+!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/img-2.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>My name is Yaikob Tesgera Tujuba, and I am a passionate Computer Science undergraduate student at Jinka University in Ethiopia. With a strong foundation in networking, software development, and systems design,
+		I am committed to leveraging technology to solve real-world problems and improve lives. Growing up in West Wollega, Oromia, I developed a deep interest in technology and how it can bridge gaps in underserved communities. My goal is to use my skills to drive innovation, enhance digital access, and make a meaningful impact in various sectors.
+
+Throughout my academic journey, I have gained hands-on experience working on projects that involve web development, network installation, and machine learning. One of my notable achievements was working on the Blood Bank Information Management System, which aims to improve the efficiency of blood bank operations and ensure the timely availability of blood supplies for patients. I also gained valuable experience during my internship at the Commercial Bank of Ethiopia, where I contributed to network infrastructure development and IT system optimizations.
+
+In addition to my academic and practical work, I am Cisco certified and hold several Udacity certificates, which have provided me with in-depth knowledge in areas such as networking, cybersecurity, and software engineering. I am always eager to learn and stay updated with the latest technologies and trends in the tech industry.
+
+Outside of my technical skills, I am passionate about graphic design, video editing, and creating digital content. I have worked on designing logos and editing videos for clients, helping them establish a strong visual presence and communicate their messages effectively.
+
+As I continue to build my career, I am focused on creating solutions that address local challenges in Ethiopia and beyond. Whether it's developing digital systems for healthcare, creating financial technology solutions, or building community-driven educational tools, I am dedicated to using my skills to foster positive change.</p>
+        <a href="#" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone Number </h1>
+            <h2>+251917345202</h2>
+            <h2>+251983461912</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>yaikobtesgera0@gmail.com</h2>
+            <h2>yaikobtesgera18@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Ethiopia, Oromia, West Wollega, Mendi</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>YA</span>IKOB <span>TE</span>SGERA</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2024 Yaikob. All rights reserved</p>
+    </div>
+	
+  </section>
+  <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
